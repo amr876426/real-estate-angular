@@ -1,0 +1,88 @@
+  
+<app-header></app-header>
+  <div class="row">
+<div class="background" >
+  <div class="logo"> 
+  <img src="../assets/imgs/logo.png">
+  </div>
+</div>
+<div class="home"> 
+  <div class="container">
+        <div class="row"> 
+          <div *ngFor="let blog of blogs" class="col-sm-6 col-md-4">
+              <div  class="thumbnail">
+                <img src="{{blog.url}}">
+              <div class="caption">
+                  <h3>{{blog.title}}</h3>
+                  <p><a  [routerLink]='["/blog",blog.id]' class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div>
+  
+          <!-- <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="../assets/imgs/7.jpg">
+              <div class="caption">
+                  <h3>Cairo Mall</h3>
+                  <p><a href="#" class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="../assets/imgs/3.jpg">
+              <div class="caption">
+                  <h3>Sant Estefano</h3>
+                  <p><a href="#" class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+               <img src="../assets/imgs/4.jpg">
+              <div class="caption">
+                  <h3>Sharm Elshihk </h3>
+                  <p><a href="#" class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+               <img src="../assets/imgs/2.jpg">
+              <div class="caption">
+                  <h3>Down Town </h3>
+                  <p><a href="#" class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+               <img src="../assets/imgs/5.jpg">
+              <div class="caption">
+                  <h3>Carffrour</h3>
+                  <p><a href="#" class="btn btn-primary" role="button">More</a> </p>
+              </div>
+              </div>
+          </div> -->
+  
+          
+      </div>
+  </div>
+      </div> <!-- /container -->
+  
+      <!-- Footer -->
+   
+      <footer class="panel panel-default">
+          <div class="panel-body text-center">
+             Copy Rright &copy;<a href="amrahmed.bitballoon.com" target="_blank" >Amr Ahmed</a>
+          </div>
+      </footer>
+
+  </div>
+ 
+ 
+
